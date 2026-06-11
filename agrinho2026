@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Energia Solar no Campo</title>
+    <style>
+        /* CSS com seletores específicos e layouts modernos */
+        :root {
+            --verde-claro: #A8E6CF;
+            --verde-folha: #2A9D8F;
+            --laranja-pastel: #FFD3B6;
+            --amarelo-pastel: #FFF9C4;
+            --texto-escuro: #264653;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--amarelo-pastel);
+            color: var(--texto-escuro);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: var(--verde-claro);
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--texto-escuro);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--verde-folha);
+            font-weight: normal;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #saudacao-usuario {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--verde-folha);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .historinha p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .destaque-agrinho {
+            background-color: var(--laranja-pastel);
+            border-left: 5px solid var(--verde-folha);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+
+        .quiz-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .botao-quiz {
+            display: inline-block;
+            background-color: var(--verde-folha);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .botao-quiz:hover {
+            background-color: #1A7566;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
+        <h2>A força do Sol é o insumo da natureza que desenvolve a produção.</h2>
+    </header>
+
+    <main>
+        <!-- Elemento manipulado via JS para exibir nome personalizado -->
+        <div id="saudacao-usuario"></div>
+
+        <section class="historinha">
+            <p>Olá, pessoal! Eu sou o <strong>Agrinho</strong> e hoje vou contar para vocês sobre uma inovação incrível que está mudando a vida dos produtores rurais: a energia solar.</p>
+            
+            <p>Lá na Fazenda Esperança, o Seu João estava preocupado com os custos da eletricidade e o impacto ambiental. Foi então que ele decidiu instalar placas solares! Com essa mudança, a fazenda passou a produzir mais alimentos sem desperdício e, de quebra, teve uma economia gigante na conta de luz.</p>
+
+            <p>Mas como essas placas funcionam? Elas captam a luz do Sol e a transformam em energia elétrica para a casa, os galpões e o maquinário. A maioria delas é feita de <strong>silício</strong>, um material semicondutor retirado da areia, super abundante na natureza.</p>
+
+            <p>O potencial da energia solar no campo é enorme! Como os espaços rurais têm bastante incidência de luz solar, essa fonte limpa e renovável ajuda a preservar o meio ambiente, reduzindo a emissão de gases poluentes.</p>
+
+            <div class="destaque-agrinho">
+                <p>"A energia solar é o futuro do nosso campo! Ela usa a luz do nosso amigo Sol para gerar economia, proteger a natureza e tornar nossa produção muito mais sustentável e eficiente!"</p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <p>Quer testar seus conhecimentos sobre o que aprendeu hoje? Venha jogar um desafio super legal!</p>
+            <!-- Tag 'a' utilizada para interação, abrindo em nova guia com rel="noopener noreferrer" -->
+            <a href="https://wayground.com/join?gc=09160969" class="botao-quiz" target="_blank" rel="noopener noreferrer">Jogar Quiz no Wayground!</a>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript utilizando variável e manipulando o DOM funcionalmente
+        function boasVindas() {
+            // Armazena e processa o nome (variável)
+            let nomeVisitante = prompt("Olá! Seja bem-vindo à página do Agrinho. Qual é o seu nome?");
+            
+            // Se o usuário não digitar nada, define um nome padrão
+            if (!nomeVisitante || nomeVisitante.trim() === "") {
+                nomeVisitante = "Amigo da Natureza";
+            }
+
+            // Manipula o DOM para alterar o texto da div "saudacao-usuario"
+            const elementoSaudacao = document.getElementById("saudacao-usuario");
+            elementoSaudacao.textContent = "Olá, " + nomeVisitante + "! É muito bom ter você por aqui.";
+        }
+
+        // Executa a função quando a página é carregada
+        window.onload = boasVindas;
+    </script>
+</body>
+</html>

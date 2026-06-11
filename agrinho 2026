@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso Agrinho 2026 - Energia Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="cabecalho-principal">
+        <h1 id="titulo-principal">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
+        <p id="subtitulo-principal">A força do Sol é o insumo da natureza que desenvolve a produção</p>
+    </header>
+
+    <main class="container">
+
+        <section id="secao-interativa">
+            <div class="campo-grupo">
+                <label for="input-nome" class="rotulo-usuario">Para começarmos, digite seu nome aqui:</label>
+                <input type="text" id="input-nome" class="entrada-usuario" placeholder="Ex: Maria Silva...">
+            </div>
+            <button type="button" id="btn-entrar" class="botao-acao">Iniciar Leitura</button>
+            
+            <div id="mensagem-boas-vindas" class="escondido"></div>
+        </section>
+
+        <section id="historia-agrinho">
+            <article>
+                <p class="paragrafo-narrativa">
+                    Olá, pessoal! Eu sou o <strong>Agrinho</strong>! Hoje quero contar para vocês uma história incrível sobre como a tecnologia e a sustentabilidade transformaram a rotina da nossa fazenda. Antigamente, nós dependíamos muito da energia elétrica convencional e o custo no final do mês pesava bastante, além de sabermos que a produção de energia nem sempre vinha de fontes limpas. Foi aí que decidimos mudar o jogo instalando <strong>placas solares</strong>!
+                </p>
+
+                <p class="paragrafo-narrativa">
+                    Com os painéis fotovoltaicos captando a luz do dia, a nossa fazenda passou a produzir muito mais alimentos sem nenhum desperdício. Toda a energia necessária para os sistemas de irrigação automatizados e para o cuidado com os animais agora vem direto do céu! O resultado prático foi imediato: uma economia gigantesca na conta de luz e a certeza de que estamos preservando o planeta.
+                </p>
+
+                <p class="paragrafo-narrativa">
+                    Mas você sabe como essas placas funcionam? É pura ciência a favor do campo! Elas são feitas de materiais semicondutores, sendo o <strong>silício</strong> o componente principal. Quando as partículas de luz do Sol (chamadas fótons) atingem essas células de silício, elas movimentam os elétrons, gerando uma corrente elétrica contínua. Essa energia passa por um aparelho chamado inversor, que a transforma na eletricidade prontinha para ligar qualquer máquina na fazenda.
+                </p>
+
+                <p class="paragrafo-narrativa">
+                    O potencial dessa tecnologia é infinito! O Brasil é um dos países com maior índice de irradiação solar do mundo. Usar o Sol no agro significa que podemos expandir nossa produção de forma limpa, garantindo a segurança alimentar das próximas gerações sem agredir as nossas florestas e rios.
+                </p>
+
+                <blockquote class="fala-destacada-agrinho">
+                    "Em resumo, o segredo do futuro está em colher o que a natureza nos dá de graça: transformando a luz do Sol em energia, produzimos mais alimentos gastando muito menos e protegendo o meio ambiente de verdade!" <br>— Agrinho
+                </blockquote>
+            </article>
+        </section>
+
+        <section id="secao-quiz">
+            <h2 id="titulo-quiz">Será que você aprendeu tudo com o Agrinho?</h2>
+            <p class="paragrafo-narrativa texto-centralizado">Participe do nosso desafio dinâmico e teste seus novos conhecimentos sobre o agro sustentável!</p>
+            
+            <a href="https://wayground.com/join?gc=09160969" target="_blank" rel="noopener noreferrer" class="botao-link-quiz">
+                Jogar Quiz no Wayground
+            </a>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
